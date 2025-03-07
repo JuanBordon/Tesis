@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receta de Cocina: Pastel de Chocolate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <header>
         <h1>Receta de Cocina: Pastel de Chocolate</h1>
+        <button id="start-timer" onclick="startTimer()">Iniciar Temporizador</button>
+        <div id="timer-display">00:00</div>
     </header>
 
     <article>
@@ -20,15 +22,15 @@
         <section>
             <h2>Ingredientes</h2>
             <ul>
-                <li onclick="markCompleted(this)">200g de harina</li>
-                <li onclick="markCompleted(this)">100g de cacao en polvo</li>
-                <li onclick="markCompleted(this)">200g de azúcar</li>
-                <li onclick="markCompleted(this)">4 huevos</li>
-                <li onclick="markCompleted(this)">200ml de leche</li>
-                <li onclick="markCompleted(this)">100g de mantequilla</li>
-                <li onclick="markCompleted(this)">1 cucharadita de polvo de hornear</li>
-                <li onclick="markCompleted(this)">Una pizca de sal</li>
-                <li onclick="markCompleted(this)">1 cucharadita de esencia de vainilla</li>
+                <li>200g de harina</li>
+                <li>100g de cacao en polvo</li>
+                <li>200g de azúcar</li>
+                <li>4 huevos</li>
+                <li>200ml de leche</li>
+                <li>100g de mantequilla</li>
+                <li>1 cucharadita de polvo de hornear</li>
+                <li>Una pizca de sal</li>
+                <li>1 cucharadita de esencia de vainilla</li>
             </ul>
         </section>
 
@@ -44,6 +46,8 @@
                 <li onclick="markCompleted(this)">¡Disfruta de tu delicioso pastel de chocolate!</li>
             </ol>
         </section>
+
+        <button id="reset" onclick="resetRecipe()">Reiniciar Receta</button>
     </article>
 
     <footer>
