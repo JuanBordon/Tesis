@@ -1,0 +1,135 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Temporizador */
+#timer-display {
+    font-size: 2em;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#start-timer {
+    background-color: #ff8a00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#start-timer:hover {
+    background-color: #ff6500;
+}
+
+/* Estilo para el artículo */
+article {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para cada sección */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #6a1b9a;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las imágenes */
+.recipe-image, .ingredients-image, .baking-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Listas de ingredientes y pasos */
+section ul, section ol {
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+section ul li, section ol li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section ul li:hover, section ol li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para los pasos completados */
+.completed {
+    text-decoration: line-through;
+    color: #6a1b9a;
+}
+
+/* Botón de reiniciar receta */
+#reset {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#reset:hover {
+    background-color: #e53935;
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-radius: 0 0 8px 8px;
+}
+
+footer strong {
+    font-weight: bold;
+}
