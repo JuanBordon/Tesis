@@ -73,6 +73,15 @@ section p {
     margin-bottom: 10px;
 }
 
+/* Estilo para las imágenes */
+.recipe-image, .ingredients-image, .baking-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Listas de ingredientes y pasos */
 section ul, section ol {
     padding-left: 20px;
     font-size: 1.1em;
