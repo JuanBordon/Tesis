@@ -34,14 +34,14 @@
 
         <section>
             <h2>Instrucciones</h2>
-            <ol>
-                <li>Precalienta el horno a 180°C (350°F).</li>
-                <li>En un tazón grande, mezcla la harina, el cacao en polvo, el azúcar, el polvo de hornear y la sal.</li>
-                <li>En otro tazón, bate los huevos y añade la leche, la mantequilla derretida y la esencia de vainilla.</li>
-                <li>Agrega los ingredientes húmedos a los ingredientes secos y mezcla hasta obtener una masa suave.</li>
-                <li>Vierte la mezcla en un molde engrasado y hornea durante 30-35 minutos o hasta que al insertar un palillo en el centro, éste salga limpio.</li>
-                <li>Deja enfriar el pastel antes de desmoldarlo.</li>
-                <li>¡Disfruta de tu delicioso pastel de chocolate!</li>
+            <ol id="steps-list">
+                <li onclick="markCompleted(this)">Precalienta el horno a 180°C (350°F).</li>
+                <li onclick="markCompleted(this)">En un tazón grande, mezcla la harina, el cacao en polvo, el azúcar, el polvo de hornear y la sal.</li>
+                <li onclick="markCompleted(this)">En otro tazón, bate los huevos y añade la leche, la mantequilla derretida y la esencia de vainilla.</li>
+                <li onclick="markCompleted(this)">Agrega los ingredientes húmedos a los ingredientes secos y mezcla hasta obtener una masa suave.</li>
+                <li onclick="markCompleted(this)">Vierte la mezcla en un molde engrasado y hornea durante 30-35 minutos o hasta que al insertar un palillo en el centro, éste salga limpio.</li>
+                <li onclick="markCompleted(this)">Deja enfriar el pastel antes de desmoldarlo.</li>
+                <li onclick="markCompleted(this)">¡Disfruta de tu delicioso pastel de chocolate!</li>
             </ol>
         </section>
     </article>
@@ -49,5 +49,8 @@
     <footer>
         <p>Receta publicada por <strong>Chef Juan</strong>. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+

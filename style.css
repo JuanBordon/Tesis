@@ -55,6 +55,13 @@ section ul, section ol {
 
 section ul li, section ol li {
     margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para los pasos completados */
+.completed {
+    text-decoration: line-through;
+    color: #6a1b9a;
 }
 
 /* Estilo para el pie de página */
