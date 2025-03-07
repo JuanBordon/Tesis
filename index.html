@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta de Cocina: Pastel de Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Receta de Cocina: Pastel de Chocolate</h1>
+        <button id="start-timer" onclick="startTimer()">Iniciar Temporizador</button>
+        <div id="timer-display">00:00</div>
+    </header>
+
+    <article>
+        <section>
+            <h2>Introducción</h2>
+            <p>Este pastel de chocolate es perfecto para cualquier ocasión especial. Su textura suave y esponjosa y su sabor intenso harán que todos queden encantados. A continuación, te mostramos los ingredientes y los pasos para preparar esta deliciosa receta.</p>
+            <img src="pastel-chocolate.jpg" alt="Pastel de chocolate" class="recipe-image">
+        </section>
+
+        <section>
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>200g de harina</li>
+                <li>200g de azúcar</li>
+                <li>4 huevos</li>
+                <li>200ml de leche</li>
+                <li>100g de mantequilla</li>
+                <li>1 cucharadita de polvo de hornear</li>
+                <li>Una pizca de sal</li>
+                <li>1 cucharadita de esencia de vainilla</li>
+            </ul>
+            <img src="ingredientes.jpg" alt="Ingredientes para pastel" class="ingredients-image">
+        </section>
+
+        <section>
+            <h2>Instrucciones</h2>
+            <ol id="steps-list">
+                <li onclick="markCompleted(this)">Precalienta el horno a 180°C (350°F).</li>
+                <li onclick="markCompleted(this)">En un tazón grande, mezcla la harina, el cacao en polvo, el azúcar, el polvo de hornear y la sal.</li>
+                <li onclick="markCompleted(this)">En otro tazón, bate los huevos y añade la leche, la mantequilla derretida y la esencia de vainilla.</li>
+                <li onclick="markCompleted(this)">Agrega los ingredientes húmedos a los ingredientes secos y mezcla hasta obtener una masa suave.</li>
+                <li onclick="markCompleted(this)">Vierte la mezcla en un molde engrasado y hornea durante 30-35 minutos o hasta que al insertar un palillo en el centro, éste salga limpio.</li>
+                <li onclick="markCompleted(this)">Deja enfriar el pastel antes de desmoldarlo.</li>
+                <li onclick="markCompleted(this)">¡Disfruta de tu delicioso pastel de chocolate!</li>
+            </ol>
+            <img src="horneado.jpg" alt="Pastel horneado" class="baking-image">
+        </section>
+
+        <button id="reset" onclick="resetRecipe()">Reiniciar Receta</button>
+    </article>
+
+    <footer>
+        <p>Receta publicada por <strong>Chef Juan</strong>. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
