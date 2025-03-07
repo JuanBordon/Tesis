@@ -6,6 +6,18 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Animación de entrada de la página */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Estilo para el encabezado */
@@ -16,6 +28,16 @@ header {
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 header h1 {
@@ -29,8 +51,11 @@ header h1 {
     color: #fff;
     margin-top: 10px;
     font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
 }
 
+/* Botón de iniciar temporizador */
 #start-timer {
     background-color: #ff8a00;
     color: white;
@@ -42,19 +67,30 @@ header h1 {
     position: absolute;
     top: 20px;
     right: 20px;
+    opacity: 0;
+    animation: fadeIn 2s 1s forwards;
 }
 
 #start-timer:hover {
     background-color: #ff6500;
 }
 
-/* Estilo para el artículo */
-article {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+/* Animación de las secciones */
+section {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Sección de Introducción */
@@ -76,6 +112,18 @@ article {
     max-width: 700px;
     margin-top: 20px;
     border-radius: 8px;
+    animation: zoomIn 1s ease-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Sección de Ingredientes */
@@ -90,6 +138,7 @@ article {
     max-width: 600px;
     margin-top: 20px;
     border-radius: 8px;
+    animation: zoomIn 1s ease-out;
 }
 
 /* Sección de Instrucciones */
@@ -103,6 +152,8 @@ article {
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .instructions li:hover {
@@ -114,6 +165,7 @@ article {
     max-width: 600px;
     margin-top: 20px;
     border-radius: 8px;
+    animation: zoomIn 1s ease-out;
 }
 
 .tip {
@@ -123,12 +175,25 @@ article {
     border-radius: 8px;
     font-size: 1.1em;
     color: #6a1b9a;
+    animation: fadeInUp 1s ease-out;
 }
 
 /* Estilo para los pasos completados */
 .completed {
     text-decoration: line-through;
     color: #6a1b9a;
+    animation: strikeThrough 0.3s ease-out;
+}
+
+@keyframes strikeThrough {
+    0% {
+        text-decoration: none;
+        opacity: 0;
+    }
+    100% {
+        text-decoration: line-through;
+        opacity: 1;
+    }
 }
 
 /* Botón de reiniciar receta */
@@ -141,6 +206,8 @@ article {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
 }
 
 #reset:hover {
@@ -156,6 +223,8 @@ footer {
     margin-top: 30px;
     font-size: 0.9em;
     border-radius: 0 0 8px 8px;
+    opacity: 0;
+    animation: fadeIn 2s 3s forwards;
 }
 
 footer strong {
