@@ -14,16 +14,21 @@
     </header>
 
     <article>
-        <section>
+        <section class="intro">
             <h2>Introducción</h2>
-            <p>Este pastel de chocolate es perfecto para cualquier ocasión especial. Su textura suave y esponjosa y su sabor intenso harán que todos queden encantados. A continuación, te mostramos los ingredientes y los pasos para preparar esta deliciosa receta.</p>
+            <p>Este pastel de chocolate es la receta perfecta para cualquier ocasión especial o una tarde de antojo. Con una textura suave y esponjosa y un sabor profundo, este pastel es irresistible. Aquí te enseñamos cómo prepararlo, paso a paso.</p>
             <img src="pastel-chocolate.jpg" alt="Pastel de chocolate" class="recipe-image">
+            <div class="intro-details">
+                <p><strong>Tiempo total de preparación:</strong> 1 hora</p>
+                <p><strong>Rinde para:</strong> 8-10 porciones</p>
+            </div>
         </section>
 
-        <section>
+        <section class="ingredients">
             <h2>Ingredientes</h2>
             <ul>
                 <li>200g de harina</li>
+                <li>100g de cacao en polvo</li>
                 <li>200g de azúcar</li>
                 <li>4 huevos</li>
                 <li>200ml de leche</li>
@@ -32,21 +37,27 @@
                 <li>Una pizca de sal</li>
                 <li>1 cucharadita de esencia de vainillaa</li>
             </ul>
-            <img src="ingredientes.jpg" alt="Ingredientes para pastel" class="ingredients-image">
+            <img src="ingredientes_bizcocho_cuatro_cuartos.jpg" alt="Ingredientes para pastel" class="ingredients-image">
+            <p>Estos son los ingredientes que necesitarás para crear este delicioso pastel de chocolate. Asegúrate de tener todo listo antes de comenzar para que el proceso sea más fácil y rápido.</p>
         </section>
 
-        <section>
+        <section class="instructions">
             <h2>Instrucciones</h2>
+            <p>A continuación, te explicamos los pasos detallados para que puedas preparar tu pastel sin problemas:</p>
             <ol id="steps-list">
                 <li onclick="markCompleted(this)">Precalienta el horno a 180°C (350°F).</li>
-                <li onclick="markCompleted(this)">En un tazón grande, mezcla la harina, el cacao en polvo, el azúcar, el polvo de hornear y la sal.</li>
-                <li onclick="markCompleted(this)">En otro tazón, bate los huevos y añade la leche, la mantequilla derretida y la esencia de vainilla.</li>
-                <li onclick="markCompleted(this)">Agrega los ingredientes húmedos a los ingredientes secos y mezcla hasta obtener una masa suave.</li>
-                <li onclick="markCompleted(this)">Vierte la mezcla en un molde engrasado y hornea durante 30-35 minutos o hasta que al insertar un palillo en el centro, éste salga limpio.</li>
-                <li onclick="markCompleted(this)">Deja enfriar el pastel antes de desmoldarlo.</li>
-                <li onclick="markCompleted(this)">¡Disfruta de tu delicioso pastel de chocolate!</li>
+                <li onclick="markCompleted(this)">En un tazón grande, mezcla la harina, el cacao en polvo, el azúcar, el polvo de hornear y la sal. Asegúrate de que todo esté bien incorporado.</li>
+                <li onclick="markCompleted(this)">En otro tazón, bate los huevos con la leche, la mantequilla derretida y la esencia de vainilla. Mezcla bien hasta obtener una mezcla suave.</li>
+                <li onclick="markCompleted(this)">Agrega los ingredientes húmedos a los ingredientes secos y mezcla hasta que obtengas una masa suave y homogénea.</li>
+                <li onclick="markCompleted(this)">Vierte la mezcla en un molde engrasado. Hornea durante 30-35 minutos, o hasta que al insertar un palillo en el centro, éste salga limpio.</li>
+                <li onclick="markCompleted(this)">Deja enfriar el pastel durante 10 minutos en el molde, luego desmóldalo y deja que se enfríe completamente.</li>
+                <li onclick="markCompleted(this)">¡Disfruta de tu delicioso pastel de chocolate! Puedes decorarlo con crema batida, frutas o un poco de chocolate derretido.</li>
             </ol>
-            <img src="horneado.jpg" alt="Pastel horneado" class="baking-image">
+            <img src="pastel-horno.jpg" alt="Pastel en el horno" class="baking-image">
+            <div class="tip">
+                <h3>Consejo:</h3>
+                <p>Para un pastel aún más delicioso, puedes agregar chispas de chocolate a la mezcla antes de hornear. Esto le dará un extra de sabor y textura.</p>
+            </div>
         </section>
 
         <button id="reset" onclick="resetRecipe()">Reiniciar Receta</button>
